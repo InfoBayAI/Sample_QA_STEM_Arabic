@@ -1,24 +1,56 @@
 # Sample_QA_STEM_Arabic
-The full corpus is curated across multiple STEM disciplines and structured for use in LLM training, evaluation, and instruction tuning (SFT/RLHF). This sample represents the structure and quality of the larger dataset.
+**Dataset Description:**
 
-Dataset composition (full corpus):
+This dataset is a large-scale collection of **Arabic STEM Question Answering (QA)** data in MCQA format, designed to support the development of advanced NLP systems and AI models for educational understanding and reasoning in Arabic.
+It is well-suited for **Supervised Fine-Tuning (SFT) and Reinforcement Learning with Human Feedback (RLHF) workflows**, helping improve model performance in question answering, reasoning, and multilingual STEM tasks.
 
-Text corpus: 1.6B+ words of curated STEM and Non-STEM educational content across 22000+ texbooks in 7 languages(English, Hindi, Arabic, Bahasa, Tamil, Telegu, Kannada)
-Question–Answer pairs: 6.5M+ high-quality Q&A pairs of STEM and Non-STEM in (English, Arabic, Hindi and Indic languages)
-Video data: 100K+ hours of STEM Videos and 30K+ hours of UGC.
-Audio data: 821K+ hours of Podcasts and Call Center data(Dual Channel)
-Medical datasets: 30M+ files including clinical and diagnostic data like CT Scan, MRI, X-ray, Pathology, EHRs, USG Reports and Echo Reports.
-This repository includes:
+**Key Use Cases**
 
-A small preview subset of the STEM English Q&A data
-Flat, viewer-friendly schema for inspection
-Parquet files suitable for benchmarking and evaluation
-Purpose of this dataset:
+    -Question Answering (QA) (MCQ-based) in Arabic
+    -Automated tutoring and educational assistants
+    -STEM knowledge retrieval systems
+    -Model benchmarking and evaluation
 
-Dataset preview and validation
-Model evaluation and experimentation
-Schema and format inspection before full-scale access
-⚠️ Note: This repository contains sample data only. Access to the complete dataset is available separately under appropriate licensing or partnership terms.
+**Dataset Specification**
 
-For further details, Email : vipul.mishra@infobay.ai Website : https://infobay.ai/
+    -Modality: Arabic text (MCQ-based question-answer pairs)
+    -Type: Educational / STEM
+    -Data Source: Curated academic and educational resources
+    -Data Nature: Real-world and curated data
+    -Content: Questions with options and correct answers
 
+**Value of This Dataset**
+
+    -Supports learning of STEM concepts in Arabic
+    -Improves reasoning capabilities of AI models
+    -Enables development of multilingual educational AI systems
+    -Enhances accuracy of QA and LLM models
+    -Provides broad coverage across STEM domains
+
+**Basic JSON Schema**
+```json
+{
+  "answer_type": "string",
+  "q_string": "string",
+  "q_option": ["string"],
+  "q_answer": "string",
+  "lang_code": "string",
+  "category": "string"
+}
+```
+**Full Dataset Overview**
+
+  6.5M+ Questions / 1.8B+ Tokens
+
+  This scale provides extensive domain coverage, rich contextual learning, and significantly improves language understanding, reasoning, and model performance.
+
+**Data Creation**
+
+  Procured through formal agreements and generated in the ordinary course of business.
+
+**Considerations**
+
+  This dataset is provided for research and educational purposes only. It contains only sample data. For access to the full dataset and enterprise licensing options, please visit our website [InfoBay AI](https://infobay.ai/) or contact us directly.
+
+    -Ph: (91) 8303174762
+    -Email: vipul@infobay.ai
